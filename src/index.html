@@ -2,13 +2,44 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Project</title>
+    <title>MarketSuplly</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=1200">
+    <meta name="viewport" content="width=1170">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>   
-    <header class="page-header"></header>
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="container">
+          <div class="left-column">
+            <div class="logo"><a href="index.html"></a></div>
+          </div>
+          <div class="right-column">
+            <div class="user-block">
+              <ul class="user-block__list">
+                <li class="user-block__item"><a href="#">My Account</a></li>
+                <li class="user-block__item"><a href="#">WishList</a></li>
+                <li class="user-block__item"><a href="#">My Cart</a></li>
+                <li class="user-block__item"><a href="#">Checkout</a></li>
+                <li class="user-block__item"><a href="#">Login</a></li>
+              </ul>
+            </div>
+            <form class="search-form" action="/" method="GET">
+              <input class="search-form__field" type="text" name="search" placeholder="Search here...">
+              <button class="search-form__btn" type="submit"><i class="icon icon-search"></i></button>
+            </form>
+            <div class="total"><a class="btn btn--total" href="#"><i class="icon icon-basket"></i></a>
+              <div class="total__content">Total<br><span>$600.00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__navbar">
+        <div class="container">
+          <p>Навигационный бар</p>
+        </div>
+      </div>
+    </header>
     <main class="page-main"></main>
     <footer class="page-footer"></footer>
     <script src="js/svg.js"></script>

@@ -502,59 +502,10 @@ template {
 }
 @font-face {
   font-family: "Lato";
-  font-weight: 800;
-  font-style: normal;
-
-  src: url("../fonts/Lato/Lato Heavy/lato-bold.woff") format("woff"), url("../fonts/Lato/Lato Heavy/lato-bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 800;
-  font-style: italic;
-
-  src: url("../fonts/Lato/Lato HeavyItalic/lato-bolditalic.woff") format("woff"), url("../fonts/Lato/Lato HeavyItalic/lato-bolditalic.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
   font-weight: 700;
   font-style: normal;
 
   src: url("../fonts/Lato/Lato Bold/lato-bold.woff") format("woff"), url("../fonts/Lato/Lato Bold/lato-bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 700;
-  font-style: italic;
-
-  src: url("../fonts/Lato/Lato BoldItalic/lato-bolditalic.woff") format("woff"), url("../fonts/Lato/Lato BoldItalic/lato-bolditalic.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 600;
-  font-style: normal;
-
-  src: url("../fonts/Lato/Lato Semibold/lato-semibold.woff") format("woff"), url("../fonts/Lato/Lato Semibold/lato-semibold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 600;
-  font-style: italic;
-
-  src: url("../fonts/Lato/Lato SemiboldItalic/lato-semibolditalic.woff") format("woff"), url("../fonts/Lato/Lato SemiboldItalic/lato-semibolditalic.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 500;
-  font-style: normal;
-
-  src: url("../fonts/Lato/Lato Medium/lato-medium.woff") format("woff"), url("../fonts/Lato/Lato Medium/lato-medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 500;
-  font-style: italic;
-
-  src: url("../fonts/Lato/Lato MediumItalic/lato-mediumitalic.woff") format("woff"), url("../fonts/Lato/Lato MediumItalic/lato-mediumitalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Lato";
@@ -564,63 +515,143 @@ template {
   src: url("../fonts/Lato/Lato Regular/lato-regular.woff") format("woff"), url("../fonts/Lato/Lato Regular/lato-regular.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Lato";
-  font-weight: 400;
-  font-style: italic;
-
-  src: url("../fonts/Lato/Lato Italic/lato-italic.woff") format("woff"), url("../fonts/Lato/Lato Italic/lato-italic.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 300;
+  font-family: "fontello";
+  font-weight: normal;
   font-style: normal;
 
-  src: url("../fonts/Lato/Lato Light/lato-light.woff") format("woff"), url("../fonts/Lato/Lato Light/lato-light.woff2") format("woff2");
+  src: url("../fonts/fontello/fontello.woff2?39759973") format("woff2"), url("../fonts/fontello/fontello.woff?39759973") format("woff");
 }
-@font-face {
-  font-family: "Lato";
-  font-weight: 300;
-  font-style: italic;
-
-  src: url("../fonts/Lato/Lato LightItalic/lato-lightitalic.woff") format("woff"), url("../fonts/Lato/Lato LightItalic/lato-lightitalic.woff2") format("woff2");
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?39759973#fontello') format('svg');
+  }
 }
-@font-face {
-  font-family: "Lato";
-  font-weight: 200;
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-weight: normal;
   font-style: normal;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
 
-  src: url("../fonts/Lato/Lato Thin/lato-thin.woff") format("woff"), url("../fonts/Lato/Lato Thin/lato-thin.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 200;
-  font-style: italic;
+  display: inline-block;
 
-  src: url("../fonts/Lato/Lato ThinItalic/lato-thinitalic.woff") format("woff"), url("../fonts/Lato/Lato ThinItalic/lato-thinitalic.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 100;
-  font-style: normal;
+  width: 1em;
+  margin-right: .2em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
 
-  src: url("../fonts/Lato/Lato Hairline/lato-hairline.woff") format("woff"), url("../fonts/Lato/Lato Hairline/lato-hairline.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Lato";
-  font-weight: 100;
-  font-style: italic;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
 
-  src: url("../fonts/Lato/Lato HairlineItalic/lato-hairlineitalic.woff") format("woff"), url("../fonts/Lato/Lato HairlineItalic/lato-hairlineitalic.woff2") format("woff2");
+  speak: none;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+.icon-basket:before {
+  line-height: 38px;
+
+  content: "\e800";
+}
+/* '' */
+.icon-star:before {
+  content: "\e801";
+}
+/* '' */
+.icon-star-filled:before {
+  content: "\e802";
+}
+/* '' */
+.icon-phone:before {
+  content: "\e803";
+}
+/* '' */
+.icon-mail:before {
+  content: "\e804";
+}
+/* '' */
+.icon-clock:before {
+  content: "\e805";
+}
+/* '' */
+.icon-list:before {
+  content: "\e806";
+}
+/* '' */
+.icon-right-dir:before {
+  content: "\e807";
+}
+/* '' */
+.icon-left-dir:before {
+  content: "\e808";
+}
+/* '' */
+.icon-play-circled2:before {
+  content: "\e809";
+}
+/* '' */
+.icon-location:before {
+  content: "\f031";
+}
+/* '' */
+.icon-twitter:before {
+  content: "\f099";
+}
+/* '' */
+.icon-facebook:before {
+  content: "\f09a";
+}
+/* '' */
+.icon-rss:before {
+  content: "\f09e";
+}
+/* '' */
+.icon-gplus:before {
+  content: "\f0d5";
+}
+/* '' */
+.icon-youtube:before {
+  content: "\f167";
+}
+/* '' */
+.icon-instagram:before {
+  content: "\f16d";
+}
+/* '' */
+.icon-pinterest:before {
+  content: "\f231";
+}
+/* '' */
+.icon-vimeo:before {
+  content: "\f27d";
+}
+/* '' */
+.icon-search:before {
+  content: "\f50d";
+}
+/* '' */
 html {
-  min-width: 320px;
   height: 100%;
 }
 body {
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.2;
-
-  min-width: 250px;
 }
 img {
   width: auto;
@@ -629,6 +660,7 @@ img {
   border: none;
 }
 .container {
+  width: 1170px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -652,4 +684,163 @@ a:focus {
   text-decoration: underline;
 
   color: #014c8d;
+}
+.left-column {
+  float: left;
+}
+.right-column {
+  float: right;
+}
+.page-header__top {
+  padding: 15px 0 25px;
+
+  background: #222;
+}
+.page-header__top:before,
+.page-header__top:after {
+  display: table;
+
+  content: "";
+}
+.page-header__top:after {
+  clear: both;
+}
+.page-header__navbar {
+  background: #f10e34;
+}
+.page-header__navbar:before,
+.page-header__navbar:after {
+  display: table;
+
+  content: "";
+}
+.page-header__navbar:after {
+  clear: both;
+}
+.total {
+  float: right;
+
+  color: #fff;
+}
+.total__content {
+  font-size: 11px;
+  line-height: 1.3;
+
+  display: inline-block;
+
+  vertical-align: middle;
+}
+.total__content span {
+  font-weight: bold;
+}
+.logo {
+  float: left;
+
+  width: 178px;
+  height: 62px;
+
+  background: url("data:image/png;base64,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") no-repeat;
+}
+.user-block {
+  float: right;
+
+  margin-bottom: 24px;
+}
+.user-block__list {
+  font-size: 12px;
+  line-height: 1.2;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.user-block__item {
+  position: relative;
+
+  display: inline-block;
+
+  margin-right: 15px;
+  padding-right: 15px;
+
+  vertical-align: top;
+}
+.user-block__item::after {
+  position: absolute;
+  right: 0;
+
+  width: 1px;
+  height: 100%;
+
+  content: "";
+
+  background-color: #fff;
+}
+.user-block__item:last-child {
+  margin: 0;
+  padding: 0;
+}
+.user-block__item:last-child::after {
+  display: none;
+}
+.user-block__item a {
+  color: #fff;
+}
+.search-form {
+  position: relative;
+
+  float: left;
+  clear: both;
+  overflow: hidden;
+
+  width: 585px;
+  margin-right: 35px;
+
+  border-radius: 5px;
+}
+.search-form__field {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+
+  width: 501px;
+  padding: 9px 58px 9px 26px;
+
+  border: none;
+  outline: none;
+}
+.search-form__btn {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+
+  width: 54px;
+  height: 100%;
+
+  cursor: pointer;
+  transition: .25s;
+
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #f10e34;
+}
+.search-form__btn:hover {
+  background: #91081f;
+}
+.btn {
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: middle;
+
+  color: #fff;
+  background-color: #f10e34;
+}
+.btn--total {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
 }

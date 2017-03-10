@@ -1,0 +1,35 @@
+.search-form {
+  float: left;
+  clear: both;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 585px;
+  margin-right: 35px;
+  &__field {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 9px 58px 9px 26px;
+    width: 501px;
+    border: none;
+    outline: none;
+  }
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    width: 54px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background-color: @red;
+    z-index: 5;
+    color: #fff;
+    transition: 0.25s;
+    &:hover {
+      background: darken(@red, 20%);
+    }
+  }
+}

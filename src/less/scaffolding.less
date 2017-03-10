@@ -1,15 +1,14 @@
 html {
-  height: 100%;
-  min-width: 320px;
+  height: 100%;  
 }
 body {  
   font-size: @font-size;
   line-height: 1.2;
-//font-family: ;
+  font-family: "Lato", "Arial", sans-serif;
 //color: ;
 //background-color: ;
-//background-image: data-uri("");  
-  min-width: 250px;
+//background-image: data-uri("");
+
 }
 
 img {
@@ -19,8 +18,10 @@ img {
 }
 
 .container {
-  .center();  
+  .center();
+  width: 1170px;
   .clearfix();
+
 }
 
 a {
@@ -32,4 +33,11 @@ a {
     color: @link-color--hover;
     text-decoration: underline;
   }
+}
+
+.left-column {
+  float: left;
+}
+.right-column {
+  float: right;
 }
