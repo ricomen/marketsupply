@@ -12,8 +12,14 @@ main.page-main
           li.categories__item Kids and Babies
           li.categories__item Sports
           li.categories__item Home and Garden
-      .hot-deals
-        h2.hot-deals__title Hot Deals
+      .slider
+        header.slider__header
+          h2.slider__title Hot Deals
+          .slider__controls
+            button.slider__btn.slider__btn--active(type="button")
+
+            button.slider__btn(type="button")
+
         article.product
           .product__img
             img(src="http://placehold.it/250x200")
@@ -25,8 +31,12 @@ main.page-main
             i.icon.icon-star
             i.icon.icon-star
             i.icon.icon-star-empty
-      .special-deal        
-        h2.special-deal__title Special Deals
+      .slider
+        header.slider__header
+          h2.slider__title Special Deal
+          .slider__controls
+            button.slider__btn.slider__btn--active(type="button")
+            button.slider__btn(type="button")
         article.product
           .product__img
             img(src="http://placehold.it/250x200")
@@ -38,6 +48,7 @@ main.page-main
             i.icon.icon-star
             i.icon.icon-star
             i.icon.icon-star-empty
+
       .subscribe
         h2.subscribe__title Newsletters
       .banner

@@ -834,6 +834,50 @@ a:focus {
 .sidebar {
   width: 297px;
 }
+.slider {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 24px;
+}
+.slider__title {
+  font-size: 22px;
+  line-height: 1.1;
+
+  margin: 0 0 26px 0;
+  padding-bottom: 28px;
+
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #eaeaea;
+}
+.slider__controls {
+  position: absolute;
+  top: 24px;
+  right: 0;
+}
+.slider__btn {
+  font-family: "fontello";
+
+  width: 22px;
+  height: 22px;
+
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #cacaca;
+}
+.slider__btn:first-child:after {
+  content: "\e808";
+}
+.slider__btn:last-child:after {
+  content: "\e807";
+}
+.slider__btn--active {
+  background-color: #f10e34;
+}
 .product {
   font-size: 15px;
   font-weight: normal;
