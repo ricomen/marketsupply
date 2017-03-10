@@ -1,0 +1,38 @@
+.product {
+  text-align: center;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: normal;
+
+  &__title {
+    margin: 0 0 12px 0;    
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: normal;
+    color: #3d3d3d;
+  }
+
+  &__img {
+    margin-bottom: 21px;
+    img {
+      vertical-align: bottom;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;    
+    margin-bottom: 12px;
+    &::before {
+      content: attr(data-sale);
+      font-weight: normal;
+      text-decoration: line-through;
+      color: #636363; 
+    }
+  }
+
+  &__raiting {
+    color: #ffc808;
+  }
+}
