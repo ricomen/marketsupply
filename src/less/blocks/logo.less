@@ -1,6 +1,33 @@
 .logo {
   float: left;
-  width: 178px;
-  height: 62px;
-  background: data-uri("../img/logo.png") no-repeat;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 35px;
+
+   a {    
+    position: relative;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: black;
+    font-style: italic;
+    color: @red;
+    transition: 0.25s;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.8;
+    }
+    &::after {
+      position: absolute;
+      top: -20px;      
+      right: -25px;
+      color: #fff;
+      font-size: 70px;
+      line-height: 70px;
+      font-family: "fontello";
+      content: "\f23d";
+    }
+    span {
+      color: #fff;
+    }
+  }  
 }
