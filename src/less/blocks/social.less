@@ -1,3 +1,28 @@
 .social {
-  
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 84px 0 0;
+    padding: 0;
+    list-style: none;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__item {
+    margin: 0 0 15px 0;
+    padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {      
+      display: block;
+      font-size: 14px;
+      line-height: 1.2;
+      color: @red;
+      & i {
+        font-size: 13px;
+      }
+    }
+  }
 }

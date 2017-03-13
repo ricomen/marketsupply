@@ -978,6 +978,40 @@ a:focus {
 .product__raiting {
   color: #ffc808;
 }
+.page-footer__top {
+  background: #222;
+}
+.social__list {
+  display: inline-block;
+
+  margin: 0 84px 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  vertical-align: top;
+}
+.social__list:last-child {
+  margin-right: 0;
+}
+.social__item {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+.social__item:last-child {
+  margin-bottom: 0;
+}
+.social__item a {
+  font-size: 14px;
+  line-height: 1.2;
+
+  display: block;
+
+  color: #f10e34;
+}
+.social__item a i {
+  font-size: 13px;
+}
 .btn {
   display: inline-block;
 
