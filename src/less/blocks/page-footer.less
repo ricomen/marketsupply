@@ -1,17 +1,112 @@
 .page-footer {
+  font-size: 14px;
+  line-height: 1.2;  
+  .icon {
+    font-size: 13px;
+    line-height: 1.2;
+    color: @red;
+  }
+  &__title {
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;    
+  }
+
   &__top {
     color: #fff;
     padding: 60px 0;
     background: @grey;
   }
   &__bottom {
+    font-size: 14px;
+    line-height: 1.2;
     text-align: center;
     color: #fff;
     padding: 40px 0 30px;
     background: #1f1e1e;
   }
-  &__copyright {    
-    font-size: 14px;
-    line-height: 1.2;
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 84px 0 0;
+    padding: 0;
+    list-style: none;
+    &:last-child {
+      margin-right: 0;
+    }
+    li {
+      margin: 0 0 13px 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #b6b6b6;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {  
+        display: block; 
+        color: inherit;
+      }
+    }
+  }
+  &__about {
+    margin-right: 80px;
+    width: 275px;
+    float: left;
+    &-descr {
+      margin-top: 10px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #b6b6b6;
+    }
+  }
+  &__information {
+    float: left;
+    width: 250px;
+  }
+  &__social {
+    float: left;
+    width: 300px;    
+  }
+  &__opening {
+    float: right;    
+    width: 265px; 
+  }
+  &__payment-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      .icon {        
+        font-size: 35px;
+      }
+    }
+  }
+  &__menu {
+    margin-bottom: 35px;
+
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &-item {      
+      display: inline-block;
+      vertical-align: top;      
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
   }
 }
