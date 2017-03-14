@@ -21,13 +21,13 @@ const smartgrid      = require('smart-grid');        // Сетка Smart-grid
 const pug            = require('gulp-pug2');         // Шаблонизатор PUG
 const eslint         = require('gulp-eslint');       // ES-Linter
 const notify         = require('gulp-notify');       // Вывод уведомлений
-const babel         = require('gulp-babel');
+const babel          = require('gulp-babel');
 /*var emitty       = require('emitty').setup('src/pug', 'pug', {
   makeVinylFile: true
 });*/
 
 //ES-Linter
-gulp.task('lint', function () {
+gulp.task('eslint', function () {
   return gulp.src(['src/js/main.js','!node_modules/**'])
   .pipe(eslint({
     rules: {
@@ -163,7 +163,7 @@ gulp.task('css-libs', ['less'], function() {
 });
 
 //Основной таск
-gulp.task('watch', ['browser-sync', 'lint'], function() {
+gulp.task('watch', ['browser-sync', 'less'], function() {
   gulp.watch('src/less/**/*.less', ['less']);
   gulp.watch('src/pug/**/*.pug', ['pug']);
   gulp.watch('src/js/main.js', ['lint']);

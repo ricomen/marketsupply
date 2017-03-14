@@ -1,3 +1,4 @@
+  "use strict";
 function Slider(settings) {
   this.slider = document.querySelector(settings.className);  
   this.sliderItems = this.slider.querySelectorAll(".slider__item");

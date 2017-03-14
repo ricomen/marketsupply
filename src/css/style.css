@@ -979,7 +979,28 @@ a:focus {
   color: #ffc808;
 }
 .page-footer__top {
+  padding: 60px 0;
+
+  color: #fff;
   background: #222;
+}
+.page-footer__bottom {
+  padding: 40px 0 30px;
+
+  text-align: center;
+
+  color: #fff;
+  background: #1f1e1e;
+}
+.page-footer__copyright {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.social__title {
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: #fff;
 }
 .social__list {
   display: inline-block;
