@@ -1,11 +1,11 @@
 .btn {
+  cursor: pointer;
   text-align: center;
   display: inline-block;
   vertical-align: middle;
   background-color: @red;
   color: #fff;
   transition: 0.25s;
-
   &:hover {
     background: darken(@red, 20%);
   }
@@ -14,6 +14,19 @@
     width: 38px;
     height: 38px;
     border-radius: 50%;
+  }
+  &--shop {
+    border: 2px solid #000;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: bold;
+    padding: 10px 24px;
+    color: #000;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
   
 }

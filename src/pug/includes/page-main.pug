@@ -1,25 +1,26 @@
 main.page-main
+  .navbar
+    .container
+
   .container
     aside.sidebar
       nav.categories
         ul.categories__list
-          li.categories__item Clothing
-          li.categories__item Electronics
-          li.categories__item Shoes
-          li.categories__item Watches
-          li.categories__item Jewellery
-          li.categories__item Health and Beauty
-          li.categories__item Kids and Babies
-          li.categories__item Sports
-          li.categories__item Home and Garden
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Clothing
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Electronics
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Shoes
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i> Watches
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Jewellery
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Health and Beauty
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Kids and Babies
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Sports
+          li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Home and Garden
       .slider
         header.slider__header
           h2.slider__title Hot Deals
           .slider__controls
             button.slider__btn.slider__btn--active(type="button")
-
             button.slider__btn(type="button")
-
         article.product
           .product__img
             img(src="http://placehold.it/250x200")
@@ -48,8 +49,26 @@ main.page-main
             i.icon.icon-star
             i.icon.icon-star
             i.icon.icon-star-empty
-
       .subscribe
         h2.subscribe__title Newsletters
       .banner
         img(src="http://placehold.it/300x440")
+    .content
+      article.promo        
+        header
+          .promo__left-col
+            h2.promo__title Collection 2016
+            h3.promo__subtitle Save 50% For
+            p First purshase
+            button.btn.btn--shop Shop Now
+        .promo__bottom
+          .promo__feature
+            h3 Money Back
+            span 30 Days Money Back Guarantee
+          .promo__feature
+            h3 Free Shiping
+            span Shiping on orders over $99
+          .promo__feature
+            h3 Special Sale
+            span Extra $5 off on all items
+

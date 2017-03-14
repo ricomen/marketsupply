@@ -8,52 +8,48 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>   
-    <header class="page-header">
-      <div class="page-header__top">
-        <div class="container">
-          <div class="left-column">
-            <div class="logo"><a href="index.html">Market<span>Supply</span></a></div>
-          </div>
-          <div class="right-column">
-            <div class="user-block">
-              <ul class="user-block__list">
-                <li class="user-block__item"><a href="#">My Account</a></li>
-                <li class="user-block__item"><a href="#">WishList</a></li>
-                <li class="user-block__item"><a href="#">My Cart</a></li>
-                <li class="user-block__item"><a href="#">Checkout</a></li>
-                <li class="user-block__item"><a href="#">Login</a></li>
-              </ul>
-            </div>
-            <form class="search-form" action="/" method="GET">
-              <input class="search-form__field" type="text" name="search" placeholder="Search here...">
-              <button class="search-form__btn" type="submit"><i class="icon icon-search"></i></button>
-            </form>
-            <div class="total"><a class="btn btn--total" href="#"><i class="icon icon-basket"></i></a>
-              <div class="total__content">Total<br><span>$600.00</span></div>
-            </div>
-          </div>
+    <header class="page-header"> 
+      <div class="container">
+        <div class="left-column">
+          <div class="logo"><a href="index.html">Market<span>Supply</span></a></div>
         </div>
-      </div>
-      <div class="page-header__navbar">
-        <div class="container">
-          <p>Навигационный бар</p>
+        <div class="right-column">
+          <div class="user-block">
+            <ul class="user-block__list">
+              <li class="user-block__item"><a href="#">My Account</a></li>
+              <li class="user-block__item"><a href="#">WishList</a></li>
+              <li class="user-block__item"><a href="#">My Cart</a></li>
+              <li class="user-block__item"><a href="#">Checkout</a></li>
+              <li class="user-block__item"><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <form class="search-form" action="/" method="GET">
+            <input class="search-form__field" type="text" name="search" placeholder="Search here...">
+            <button class="search-form__btn" type="submit"><i class="icon icon-search"></i></button>
+          </form>
+          <div class="total"><a class="btn btn--total" href="#"><i class="icon icon-basket"></i></a>
+            <div class="total__content">Total<br><span>$600.00</span></div>
+          </div>
         </div>
       </div>
     </header>
     <main class="page-main">
+      <div class="navbar">
+        <div class="container"></div>
+      </div>
       <div class="container">
         <aside class="sidebar">
           <nav class="categories">
             <ul class="categories__list">
-              <li class="categories__item">Clothing</li>
-              <li class="categories__item">Electronics</li>
-              <li class="categories__item">Shoes</li>
-              <li class="categories__item">Watches</li>
-              <li class="categories__item">Jewellery</li>
-              <li class="categories__item">Health and Beauty</li>
-              <li class="categories__item">Kids and Babies</li>
-              <li class="categories__item">Sports</li>
-              <li class="categories__item">Home and Garden</li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Clothing</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Electronics</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Shoes</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i> Watches</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Jewellery</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Health and Beauty</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Kids and Babies</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Sports</a></li>
+              <li class="categories__item"><a href="#"><i class="icon  icon-play-circled2"></i>Home and Garden</a></li>
             </ul>
           </nav>
           <div class="slider">
@@ -91,6 +87,29 @@
           </div>
           <div class="banner"><img src="http://placehold.it/300x440"></div>
         </aside>
+        <div class="content">
+          <article class="promo">       
+            <header>
+              <div class="promo__left-col">
+                <h2 class="promo__title">Collection 2016</h2>
+                <h3 class="promo__subtitle">Save 50% For</h3>
+                <p>First purshase</p>
+                <button class="btn btn--shop">Shop Now</button>
+              </div>
+            </header>
+            <div class="promo__bottom">
+              <div class="promo__feature">
+                <h3>Money Back</h3><span>30 Days Money Back Guarantee</span>
+              </div>
+              <div class="promo__feature">
+                <h3>Free Shiping</h3><span>Shiping on orders over $99</span>
+              </div>
+              <div class="promo__feature">
+                <h3>Special Sale</h3><span>Extra $5 off on all items</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
