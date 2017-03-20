@@ -15,40 +15,92 @@ main.page-main
           li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Kids and Babies
           li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Sports
           li.categories__item: a(href="#") <i class="icon  icon-play-circled2"></i>Home and Garden
-      .slider
+      .slider.hot-deals
         header.slider__header
           h2.slider__title Hot Deals
           .slider__controls
-            button.slider__btn.slider__btn--active(type="button")
-            button.slider__btn(type="button")
-        article.product
-          .product__img
-            img(src="http://placehold.it/250x200")
-          h2.product__title lorem ipsum dolor
-          .product__price(data-sale="$100.00") $90.00
-          .product__raiting
-            i.icon.icon-star
-            i.icon.icon-star
-            i.icon.icon-star
-            i.icon.icon-star
-            i.icon.icon-star-empty
-      .slider
+            button.slider__btn.slider__btn--prev(type="button")
+            button.slider__btn.slider__btn--next(type="button")
+        .slider__container
+          .slider__item
+            article.product
+              .product__img
+                img(src="http://placehold.it/250x200")
+              h2.product__title lorem ipsum dolor
+              .product__price(data-sale="$100.00") $90.00
+              .product__raiting
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star-empty
+          .slider__item
+            article.product
+              .product__img
+                img(src="http://placehold.it/250x200")
+              h2.product__title lorem ipsum dolor
+              .product__price(data-sale="$100.00") $90.00
+              .product__raiting
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star-empty
+          .slider__item
+            article.product
+              .product__img
+                img(src="http://placehold.it/250x200")
+              h2.product__title lorem ipsum dolor
+              .product__price(data-sale="$100.00") $90.00
+              .product__raiting
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star-empty
+      .slider.special-deal
         header.slider__header
           h2.slider__title Special Deal
           .slider__controls
-            button.slider__btn.slider__btn--active(type="button")
-            button.slider__btn(type="button")
-        article.product
-          .product__img
-            img(src="http://placehold.it/250x200")
-          h2.product__title lorem ipsum dolor
-          .product__price(data-sale="$100.00") $90.00
-          .product__raiting
-            i.icon.icon-star
-            i.icon.icon-star
-            i.icon.icon-star
-            i.icon.icon-star
-            i.icon.icon-star-empty
+            button.slider__btn.slider__btn--prev(type="button")
+            button.slider__btn.slider__btn--next(type="button")
+        .slider__container
+          .slider__item
+            article.product
+              .product__img
+                img(src="http://placehold.it/250x200")
+              h2.product__title lorem ipsum dolor
+              .product__price(data-sale="$100.00") $90.00
+              .product__raiting
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star-empty
+          .slider__item
+            article.product
+              .product__img
+                img(src="http://placehold.it/250x200")
+              h2.product__title lorem ipsum dolor
+              .product__price(data-sale="$100.00") $90.00
+              .product__raiting
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star-empty
+          .slider__item
+            article.product
+              .product__img
+                img(src="http://placehold.it/250x200")
+              h2.product__title lorem ipsum dolor
+              .product__price(data-sale="$100.00") $90.00
+              .product__raiting
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star
+                i.icon.icon-star-empty
       .subscribe
         h2.subscribe__title Newsletters
         form(action="/" method="POST")
@@ -79,7 +131,7 @@ main.page-main
         header.slider__header
           h2.slider__title New Products
           .slider__controls
-            button.slider__btn.slider__btn--prev.slider__btn--active(type="button")
+            button.slider__btn.slider__btn--prev(type="button")
             button.slider__btn.slider__btn--next(type="button")
         .slider__container
           .slider__item
