@@ -1019,9 +1019,86 @@ a:focus {
   float: left;
 
   width: 297px;
+  margin-bottom: 30px;
 }
 .subscribe {
+  margin-bottom: 30px;
+  padding: 24px;
+
   background-color: #fff;
+}
+.subscribe__title {
+  font-size: 22px;
+  line-height: 1.1;
+
+  margin: 0 0 26px 0;
+  padding-bottom: 28px;
+
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #eaeaea;
+}
+.subscribe label {
+  font-size: 15px;
+  line-height: 1.2;
+
+  display: block;
+
+  margin-bottom: 15px;
+}
+.subscribe__field {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+
+  border: none;
+  outline: none;
+  background: #f3f3f3;
+
+  border-raius: 3px;
+}
+.banners {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  margin-bottom: 30px;
+
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.banner__title,
+.banner__subtitle {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  margin: 0;
+
+  text-transform: uppercase;
+}
+.banner__subtitle {
+  font-weight: 900;
+
+  margin-bottom: 25px;
+
+  color: #0f8ce9;
+}
+.banner--fullwidth {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+
+  width: 100%;
+  padding: 34px;
+
+  background: #fff;
+
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .product {
   font-size: 15px;
@@ -1281,6 +1358,19 @@ a:focus {
 }
 .btn:hover {
   background: #91081f;
+}
+.btn--medium {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  padding: 13px;
+
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 20px;
+  outline: none;
 }
 .btn--total {
   width: 38px;

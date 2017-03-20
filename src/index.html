@@ -87,7 +87,7 @@
             <form action="/" method="POST">
               <label for="subscribe">Sign Up for Our Newsletter!</label>
               <input class="subscribe__field" id="subscribe" type="text" name="email">
-              <button class="btn" type="button">Subscribe</button>
+              <button class="btn btn--medium" type="button">Subscribe</button>
             </form>
           </div>
           <div class="banner"><img src="http://placehold.it/300x440"></div>
@@ -177,12 +177,143 @@
               </div>
             </div>
           </div>
-          <div class="banner-conatiner">
-            <div class="left-column">
-              <div class="banner"><img src="http://placehold.it/300x440"></div>
+          <section class="banners">
+            <div class="banner"><a href="#"><img src="img/banner-1.jpg"></a></div>
+            <div class="banner"><a href="#"><img src="img/banner-2.jpg"></a></div>
+          </section>
+          <div class="last-products slider">
+            <header class="slider__header">
+              <h2 class="slider__title">Last Products</h2>
+              <div class="slider__controls">
+                <button class="slider__btn slider__btn--prev slider__btn--active" type="button"></button>
+                <button class="slider__btn slider__btn--next" type="button"></button>
+              </div>
+            </header>
+            <div class="slider__container">
+              <div class="slider__item">
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+              </div>
+              <div class="slider__item">
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+              </div>
             </div>
-            <div class="right-column">
-              <div class="banner"><img src="http://placehold.it/300x440"></div>
+          </div>
+          <section class="banners">
+            <div class="banner banner--fullwidth">
+              <div class="banner__img"><img src="img/banner-3.jpg"></div>
+              <div class="banner__decription">
+                <h2 class="banner__title">Beautiful Laptop</h2>
+                <h3 class="banner__subtitle">Retina Display 18" Ready!</h3><a class="btn btn--medium">Shop Now</a>
+              </div>
+            </div>
+          </section>
+          <div class="featured-products slider">
+            <header class="slider__header">
+              <h2 class="slider__title">Featured Products</h2>
+              <div class="slider__controls">
+                <button class="slider__btn slider__btn--prev slider__btn--active" type="button"></button>
+                <button class="slider__btn slider__btn--next" type="button"></button>
+              </div>
+            </header>
+            <div class="slider__container">
+              <div class="slider__item">
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+              </div>
+              <div class="slider__item">
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+                <article class="product product--small">
+                  <div class="product__img"><img src="http://placehold.it/180x200"></div>
+                  <h2 class="product__title">lorem ipsum dolor</h2>
+                  <div class="product__price" data-sale="$100.00">$90.00</div>
+                  <div class="product__raiting"><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star-empty"></i></div>
+                </article>
+              </div>
             </div>
           </div>
         </div>

@@ -64,3 +64,14 @@ var s1 = new Slider({
         interval: "2500",
         inf: false
 });
+
+var s2 = new Slider({
+        className: ".last-products",
+        interval: "2500",
+        inf: false
+});
+var s3 = new Slider({
+        className: ".featured-products",
+        interval: "2500",
+        inf: false
+});
