@@ -1,5 +1,5 @@
-  "use strict";
 function Slider(settings) {
+  "use strict";
   this.slider = document.querySelector(settings.className);  
   this.sliderItems = this.slider.querySelectorAll(".slider__item");
   this.btnPrev = this.slider.querySelector('.slider__btn--prev');
@@ -7,6 +7,7 @@ function Slider(settings) {
   this.interval = settings.interval;  
   this.inf = settings.inf;   
   var self = this;
+
   this.btnNext.onclick = function() {    
     self.nextSlide();
   } 
@@ -59,19 +60,7 @@ Slider.prototype.prevSlide = function() {
 
 
 var s1 = new Slider({
-        className: ".s1",
+        className: ".new-products",
         interval: "2500",
         inf: false
-});
-
-var s2 = new Slider({
-        className: ".s2",
-        interval: "3000",
-        inf: true
-});
-
-var s3 = new Slider({
-        className: ".s3",
-        interval: "3000",
-        inf: true
 });
